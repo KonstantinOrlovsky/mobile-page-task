@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="wrapper flex-column">
+        <header>
+            <div class="status-bar flex-row"></div>
+            <span class="cross"></span>
+        </header>
+    
+        <main>
+            <title></title>
+            
+            <section class="page-container images-container">
+                <figure>
+                    <picture>
+                        <source srcset="assets/images/content-images/content-img1/content-img1.png" media="(max-width: 375px)">
+                        <source srcset="assets/images/content-images/content-img1/content-img1@2x.png" media="(max-width: 400px)">
+                        <img src="assets/images/content-images/content-img1/content-img1@3x.png" alt="content image 1">
+                      </picture>
+                    <figcaption id="content-image-description-1"></figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="assets/images/content-images/content-img2/content-img2.png" media="(max-width: 375px)">
+                        <source srcset="assets/images/content-images/content-img2/content-img2@2x.png" media="(max-width: 400px)">
+                        <img src="assets/images/content-images/content-img2/content-img2@3x.png" alt="content image 2">
+                      </picture>
+                    <figcaption id="content-image-description-2"></figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="assets/images/content-images/content-img3/content-img3.png" media="(max-width: 375px)">
+                        <source srcset="assets/images/content-images/content-img3/content-img3@2x.png" media="(max-width: 400px)">
+                        <img src="assets/images/content-images/content-img3/content-img3@3x.png" alt="content image 3">
+                      </picture>
+                    <figcaption id="content-image-description-3"></figcaption>
+                </figure>
+            </section>
+        
+            <section class="page-container">
+                <div class="offers flex-column">
+                    <input hidden="true" type="radio" name="offer" id="appleOffer" value="https://apple.com/" />
+                    <label for="appleOffer" class="button offer-btn flex-row early">
+                        <div class="offer-access flex-column">
+                            <span class="title-access"></span>
+                            <span class="offer-description"></span>
+                        </div>
+                        <div class="offer-perweek flex-column">
+                            <span class="offer-description"></span>
+                        </div>
+                        <span class="best-offer"></span>
+                    </label>
+
+                    <input hidden="true" type="radio" name="offer" id="googleOffer" value="https://google.com/" />
+                    <label for="googleOffer" class="button offer-btn flex-row weekly">
+
+                        <div class="offer-access flex-column">
+                            <span class="title-access"></span>
+                        </div>
+                        <div class="offer-perweek flex-column">
+                            <span class="offer-description"></span>
+                        </div>
+                    </label>
+                </div>
+                
+                <button class="button continue-btn" type="submit">
+                    <span class="title"></span>
+                </button>
+            </section>
+          </main>
+    
+          <footer class="page-container">
+            <nav>
+                <a class="link-1" href="#"></a>
+                <a class="link-2" href="#"></a>
+                <a class="link-3" href="#"></a>
+            </nav>
+            <hr>
+          </footer>
+    </div>
+    
+    
+</body>
+</html>
+
+<template id="13iphone">
+    <div>
+        <span class="datetime"></span>
+    </div>
+
+    <div class="right flex-row">
+        <div class="mobile-signal-img"></div>
+        <div class="wifi-img"></div>
+        <svg width="26" height="11" viewBox="0 0 26 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3199 2.5C23.3199 1.11929 22.2007 0 20.8199 0H2.93994C1.55923 0 0.439941 1.11929 0.439941 2.5V8C0.439941 9.38071 1.55923 10.5 2.93994 10.5H19.6474H20.8199C22.2007 10.5 23.3199 9.38071 23.3199 8V2.5ZM22.2799 3C22.2799 1.89543 21.3845 1 20.2799 1H3.47995C2.37538 1 1.47995 1.89543 1.47995 3V7.5C1.47995 8.60457 2.37538 9.5 3.47995 9.5H18.6074H20.2799C21.3845 9.5 22.2799 8.60457 22.2799 7.5V3Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3599 7.374C25.257 7.15198 25.9199 6.36893 25.9199 5.437C25.9199 4.50507 25.257 3.72201 24.3599 3.5V7.374Z" fill="white"/>
+            <rect id="battery-indicator" rx="1.5" ry="1.5" x="2.5" y="1.7" width="18.8" height="7" fill="white" />
+        </svg>
+    </div>
+</template>
+
+<template id="8iphone">
+    <div class="left flex-row">
+        <div class="mobile-signal-img"></div>
+        <span>Sketch</span>
+        <div class="wifi-img"></div>
+    </div>
+    
+    <span class="datetime"></span>
+
+    <div class="right flex-row">
+        <div class="bluetooth-img"></div>
+        <span class="battery-lvl"></span>
+        <svg width="26" height="11" viewBox="0 0 26 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3199 2.5C23.3199 1.11929 22.2007 0 20.8199 0H2.93994C1.55923 0 0.439941 1.11929 0.439941 2.5V8C0.439941 9.38071 1.55923 10.5 2.93994 10.5H19.6474H20.8199C22.2007 10.5 23.3199 9.38071 23.3199 8V2.5ZM22.2799 3C22.2799 1.89543 21.3845 1 20.2799 1H3.47995C2.37538 1 1.47995 1.89543 1.47995 3V7.5C1.47995 8.60457 2.37538 9.5 3.47995 9.5H18.6074H20.2799C21.3845 9.5 22.2799 8.60457 22.2799 7.5V3Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3599 7.374C25.257 7.15198 25.9199 6.36893 25.9199 5.437C25.9199 4.50507 25.257 3.72201 24.3599 3.5V7.374Z" fill="white"/>
+            <rect id="battery-indicator" rx="1.5" ry="1.5" x="2.5" y="1.7" width="18.8" height="7" fill="white" />
+        </svg>
+    </div>
+</template>
